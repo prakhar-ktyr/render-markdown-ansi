@@ -1,0 +1,69 @@
+{
+  "name": "render-markdown-ansi",
+  "version": "1.0.0",
+  "description": "Zero-dependency Markdown to ANSI terminal renderer. Converts Markdown strings into beautifully formatted terminal output with full GFM support.",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.ts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prakhar-ktyr/render-markdown-ansi.git"
+  },
+  "keywords": [
+    "markdown",
+    "ansi",
+    "terminal",
+    "cli",
+    "renderer",
+    "zero-dependency",
+    "commonmark",
+    "gfm",
+    "formatting",
+    "escape-codes",
+    "console"
+  ],
+  "author": "Prakhar Katiyar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prakhar-ktyr/render-markdown-ansi/issues"
+  },
+  "homepage": "https://github.com/prakhar-ktyr/render-markdown-ansi#readme",
+  "engines": {
+    "node": ">=16"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.6",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  }
+}
