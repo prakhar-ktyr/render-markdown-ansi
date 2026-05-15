@@ -209,14 +209,37 @@ renderMarkdown(md, { width: 120 });
 renderMarkdown(md, { showLinks: false });
 ```
 
-## Compatibility
+## Development
 
-- **Node.js**: 16+
-- **Module**: ESM and CommonJS
-- **TypeScript**: Full type definitions included
-- **Terminal**: Any terminal supporting ANSI escape codes
+```bash
+git clone https://github.com/prakhar-ktyr/render-markdown-ansi.git
+cd render-markdown-ansi
+npm install
+
+npm test              # Run all 131 tests
+npm run test:watch    # Watch mode
+npm run test:coverage # Coverage report
+npm run build         # Build CJS + ESM + .d.ts
+npm run typecheck     # Type checking only
+```
+
+### Run the demo
+
+```bash
+npx tsx examples/demo.ts
+```
 
 ## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+
+- **Architecture overview** — how the 3-phase pipeline works
+- **Module dependency graph** — what depends on what
+- **Step-by-step guides** — how to add new block/inline elements
+- **Testing strategy** — what to test and how
+- **Publishing checklist** — pre-publish validation steps
+
+Quick start:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
