@@ -42,6 +42,29 @@ This is **bold**, *italic*, and ~~strikethrough~~ text.
 console.log(renderMarkdown(markdown));
 ```
 
+## CLI Usage
+
+The package includes a built-in command line tool called `mdview` for rendering Markdown files directly in your terminal.
+
+You can run it instantly without installing anything:
+
+```bash
+npx render-markdown-ansi README.md
+```
+
+Or, install it globally to use the `mdview` command anywhere:
+
+```bash
+# Install globally
+npm install -g render-markdown-ansi
+
+# Use the command
+mdview README.md
+
+# Check the version
+mdview -v
+```
+
 ## Supported Syntax
 
 ### Block Elements
