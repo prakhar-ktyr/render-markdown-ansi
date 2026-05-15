@@ -57,7 +57,7 @@
   },
   "homepage": "https://github.com/prakhar-ktyr/render-markdown-ansi#readme",
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "sideEffects": false,
   "devDependencies": {
