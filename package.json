@@ -17,7 +17,7 @@
     }
   },
   "bin": {
-    "mdview": "./bin/mdview.js"
+    "mdview": "bin/mdview.js"
   },
   "files": [
     "dist",
@@ -69,5 +69,8 @@
     "tsup": "^8.5.1",
     "typescript": "^6.0.3",
     "vitest": "^4.1.6"
+  },
+  "dependencies": {
+    "render-markdown-ansi": "^1.1.0"
   }
 }
