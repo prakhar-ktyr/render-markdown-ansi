@@ -16,8 +16,12 @@
       "require": "./dist/index.js"
     }
   },
+  "bin": {
+    "mdview": "./bin/mdview.js"
+  },
   "files": [
     "dist",
+    "bin",
     "README.md",
     "LICENSE",
     "CHANGELOG.md"
