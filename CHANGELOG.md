@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-05-16
+
 ### Added
 - Standard input (`stdin`) support for the `mdview` CLI, allowing you to pipe Markdown directly into the tool.
 - CLI flags for `mdview`: `--no-colors`, `--no-unicode`, `--hide-links`, and `--width=<n>`.
