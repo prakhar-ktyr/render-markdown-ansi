@@ -27,14 +27,15 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsup --tsconfig tsconfig.build.json",
+    "dev": "tsup --watch --tsconfig tsconfig.build.json",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "lint": "tsc --noEmit",
-    "typecheck": "tsc --noEmit",
+    "lint": "tsc --project tsconfig.build.json --noEmit",
+    "typecheck": "tsc --project tsconfig.build.json --noEmit",
     "prepublishOnly": "npm run build",
+    "version": "git add CHANGELOG.md",
     "clean": "rm -rf dist"
   },
   "repository": {
@@ -65,9 +66,14 @@
   },
   "sideEffects": false,
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
+    "@types/node": "^25.8.0",
     "@vitest/coverage-v8": "^4.1.6",
     "tsup": "^8.5.1",
     "typescript": "^6.0.3",
     "vitest": "^4.1.6"
+  },
+  "overrides": {
+    "fflate": "0.8.2"
   }
 }
