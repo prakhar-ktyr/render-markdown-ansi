@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- Standard input (`stdin`) support for the `mdview` CLI, allowing you to pipe Markdown directly into the tool.
+- CLI flags for `mdview`: `--no-colors`, `--no-unicode`, `--hide-links`, and `--width=<n>`.
+- Automatic terminal width detection for `mdview` output wrapping.
+
 ## [1.1.2] - 2026-05-16
 
 ### Added

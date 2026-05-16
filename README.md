@@ -61,8 +61,31 @@ npm install -g render-markdown-ansi
 # Use the command
 mdview README.md
 
+# Pipe from standard input (stdin)
+cat README.md | mdview
+curl -sL https://raw.githubusercontent.com/prakhar-ktyr/render-markdown-ansi/main/README.md | mdview
+
 # Check the version
 mdview -v
+```
+
+### CLI Options
+
+You can customize the rendering using the following flags:
+
+```bash
+Options:
+  --no-colors     Disable ANSI colors
+  --no-unicode    Use ASCII characters instead of Unicode
+  --hide-links    Do not show URLs after link text
+  --width=<n>     Set terminal wrap width (default: auto, based on terminal)
+  -v, --version   Show version number
+  -h, --help      Show help message
+```
+
+**Example:**
+```bash
+mdview --no-colors --width=100 README.md
 ```
 
 ## Supported Syntax
